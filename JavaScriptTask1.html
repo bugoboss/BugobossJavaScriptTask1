@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start.ng JavaScript Task 1</title>
+    </head>
+     <body onload="makeEvenNumbers(); return;" >
+        <h1>Start.ng JavaScript Task 1</h1>
+        <br>
+        <br>       
+        
+        <script>
+            var userName = "Chibugo Amadi";
+            document.write(userName);
+        </script>
+        <br>
+        <br>
+
+        <script>
+            var course = new Array(4);
+            course[0] = "HTML";
+            course[1] = "CSS";
+            course[2] = "JavaScript";
+            course[3] = "PHP";
+
+            document.write(course[0]); 
+            document.write(", " + course[1] + ", " + course[2] + ", " + course[3]); 
+         
+        </script>
+        <br>
+        <p id="evenNumbers"></p>
+        
+        <script type="text/javascript">
+        function makeEvenNumbers(){
+            var items = ''; 
+        
+        for (var i=2; i<=200; i++) {
+            if(i%2==0) {
+            items +="<li>" + i + "</li>";
+            }
+         }
+        
+         var list = "<ul>" + items + "</ul>"; 
+        document.getElementById("evenNumbers").innerHTML = list;
+        }
+        </script>
+        
+       
+        <br>
+    </body>
+</html>
